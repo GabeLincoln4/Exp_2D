@@ -6,7 +6,9 @@ using UnityEngine.Events;
 public class GameEventListener : MonoBehaviour
 {
     public GameEvent _gameEvent;
-    public UnityEvent _response;
+    public UnityEvent<ItemObject, int> _response;
+    public ItemObject _itemObject;
+    public int _amountOfItem;
 
     void OnEnable()
     {
@@ -20,6 +22,6 @@ public class GameEventListener : MonoBehaviour
 
     public void OnEventRaised ()
     {
-        _response.Invoke();
+        _response.Invoke(_itemObject, _amountOfItem);
     }
 }
