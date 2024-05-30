@@ -6,10 +6,10 @@ using UnityEngine;
 public class InventoryObject : ScriptableObject
 {
     public List<InventorySlot> _container = new List<InventorySlot>(); 
-    public void AddItem(ItemObject item, int amount)
+    public void AddItem()
     {
         {
-            _container.Add(new InventorySlot(item, amount));
+            _container.Add(new InventorySlot());
         }
     }
 }
@@ -19,10 +19,9 @@ public class InventorySlot
 {
     public ItemObject _item;
     public int _amount;
-    public InventorySlot(ItemObject item, int amount)
+    public InventorySlot()
     {
-        _item = item;
-        _amount = amount;
+        
     }
     public void AddAmount(int value)
     {
