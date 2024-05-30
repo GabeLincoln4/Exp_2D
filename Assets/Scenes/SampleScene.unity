@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 104337420}
   - component: {fileID: 104337419}
-  - component: {fileID: 104337421}
   - component: {fileID: 104337423}
   m_Layer: 0
   m_Name: Player
@@ -209,34 +208,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &104337421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104337418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07f73612e15df449a9ed0ac4cdc8899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameEvent: {fileID: 11400000, guid: 7ac4399ab8b56c847aeb8545ad50b73b, type: 2}
-  _response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 104337419}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: ecb833396a7ec9843ac89d421c89ce0f, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!61 &104337423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -594,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07f73612e15df449a9ed0ac4cdc8899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameEvent: {fileID: 11400000, guid: 7ac4399ab8b56c847aeb8545ad50b73b, type: 2}
+  _gameEvent: {fileID: 11400000, guid: 673a10e7c1cf0c5488267246fde15a11, type: 2}
   _response:
     m_PersistentCalls:
       m_Calls:
@@ -603,7 +574,19 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: bc9c56aae74cfee43943c6ee5fa60aea, type: 2}
+          m_ObjectArgument: {fileID: 2100000, guid: 1ec781e960ed0aa4591a68f1ef53cd15, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 926592067}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: ecb833396a7ec9843ac89d421c89ce0f, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
