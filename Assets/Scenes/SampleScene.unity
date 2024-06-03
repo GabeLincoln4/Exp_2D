@@ -460,6 +460,7 @@ MonoBehaviour:
   _onAttackInputEvent: {fileID: 11400000, guid: 7ac4399ab8b56c847aeb8545ad50b73b, type: 2}
   _onAttackInputEventEnd: {fileID: 11400000, guid: 831e8b5004fcdd940a2d07a79ae75e93, type: 2}
   _onMagicAttackInputInvoked: {fileID: 11400000, guid: 673a10e7c1cf0c5488267246fde15a11, type: 2}
+  _magicAttackIsRaised: {fileID: 11400000, guid: a989d2cc04207a343b8eb990896a59e1, type: 2}
 --- !u!114 &567113038
 MonoBehaviour:
   m_ObjectHideFlags: 0

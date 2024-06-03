@@ -8,6 +8,8 @@ public class InputSystem : MonoBehaviour
     public GameEvent _onAttackInputEvent;
     public GameEvent _onAttackInputEventEnd;
     public GameEvent _onMagicAttackInputInvoked;
+    [SerializeField]
+    private BooleanVariableObject _magicAttackIsRaised;
     private bool _magicAttackInputInvoked = false;
 
     public void Update()
@@ -29,7 +31,7 @@ public class InputSystem : MonoBehaviour
 
         if (Input.GetButtonDown("Magic Attack"))
         {
-            if (!_magicAttackInputInvoked)
+            if (!_magicAttackIsRaised._value)
             {
                 _onMagicAttackInputInvoked.Raise();
                 Debug.Log("Magic Attack Inovked");
@@ -40,11 +42,11 @@ public class InputSystem : MonoBehaviour
 
     public void SetMagicAttackInputToInvoked ()
     {
-        _magicAttackInputInvoked = true;
+        _magicAttackIsRaised._value = true;
     }
 
     public void SetMagicAttackInputToNotInvoked ()
     {
-        _magicAttackInputInvoked = false;
+        _magicAttackIsRaised._value = false;
     }
 }
