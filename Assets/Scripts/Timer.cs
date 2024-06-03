@@ -10,6 +10,9 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private GameEvent _onTimerOff;
 
+    [SerializeField]
+    private FloatVariableObject _timerDurationInSeconds;
+
     private void OnEnable ()
     {
         StartCoroutine(StartTimer());
@@ -23,7 +26,7 @@ public class Timer : MonoBehaviour
     IEnumerator StartTimer ()
     {
         Debug.Log("Timer started");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(_timerDurationInSeconds._value);
         Debug.Log("Timer finished");
         _timerGameObject.SetActive(false);
     }

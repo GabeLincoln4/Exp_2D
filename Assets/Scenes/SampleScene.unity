@@ -280,6 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timerGameObject: {fileID: 354144770}
   _onTimerOff: {fileID: 11400000, guid: 4a597fa520818a947b317db58fbde49b, type: 2}
+  _timerDurationInSeconds: {fileID: 11400000, guid: bd734439e089ab34cb44587b0bb33472, type: 2}
 --- !u!1 &443544945
 GameObject:
   m_ObjectHideFlags: 0
