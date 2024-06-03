@@ -10,7 +10,6 @@ public class InputSystem : MonoBehaviour
     public GameEvent _onMagicAttackInputInvoked;
     [SerializeField]
     private BooleanVariableObject _magicAttackIsRaised;
-    private bool _magicAttackInputInvoked = false;
 
     public void Update()
     {
@@ -39,6 +38,11 @@ public class InputSystem : MonoBehaviour
         }
 
     } 
+
+    private void OnEnable ()
+    {
+        SetMagicAttackInputToNotInvoked();
+    }
 
     public void SetMagicAttackInputToInvoked ()
     {
