@@ -33,7 +33,6 @@ public class InputSystem : MonoBehaviour
             if (!_magicAttackIsRaised._value)
             {
                 _onMagicAttackInputInvoked.Raise();
-                Debug.Log("Magic Attack Inovked");
             }
         }
 
