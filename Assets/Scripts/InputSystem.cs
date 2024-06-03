@@ -8,6 +8,7 @@ public class InputSystem : MonoBehaviour
     public GameEvent _onAttackInputEvent;
     public GameEvent _onAttackInputEventEnd;
     public GameEvent _onMagicAttackInputInvoked;
+    private bool _magicAttackInputInvoked = false;
 
     public void Update()
     {
@@ -28,8 +29,22 @@ public class InputSystem : MonoBehaviour
 
         if (Input.GetButtonDown("Magic Attack"))
         {
-            _onMagicAttackInputInvoked.Raise();
+            if (!_magicAttackInputInvoked)
+            {
+                _onMagicAttackInputInvoked.Raise();
+                Debug.Log("Magic Attack Inovked");
+            }
         }
 
     } 
+
+    public void SetMagicAttackInputToInvoked ()
+    {
+        _magicAttackInputInvoked = true;
+    }
+
+    public void SetMagicAttackInputToNotInvoked ()
+    {
+        _magicAttackInputInvoked = false;
+    }
 }
