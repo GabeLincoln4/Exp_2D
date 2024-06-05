@@ -13,7 +13,10 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private FloatVariableObject _timerDurationInSeconds;
 
-    private void OnEnable ()
+    [SerializeField]
+    private float _customDuration;
+
+    public void OnEnable ()
     {
         StartCoroutine(StartTimer());
     }
@@ -25,6 +28,7 @@ public class Timer : MonoBehaviour
 
     IEnumerator StartTimer ()
     {
+        _timerDurationInSeconds._value = _customDuration;
         Debug.Log("Timer started");
         yield return new WaitForSeconds(_timerDurationInSeconds._value);
         Debug.Log("Timer finished");
