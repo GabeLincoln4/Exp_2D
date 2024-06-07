@@ -16,4 +16,7 @@ public class InputDebugger : MonoBehaviour
 
     public void DisplayMagicAttackMessage ()
     { Debug.Log("Magic Attack Invoked"); }
+
+    public void DisplayButtonPromptAStatus ()
+    { Debug.Log("Button Prompt A is active"); }
 }
