@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class CharacterStatsObject : ScriptableObject
 {
     public string _name;
-    public float _characterHealth;
+    public float _initialHealth;
+    public float _currentCharacterHealth;
     public float _characterMental;
 }
