@@ -10,9 +10,6 @@ public class Character : MonoBehaviour
     private FloatVariableObject _characterLuck;
 
     [SerializeField]
-    private float _damageTaken;
-
-    [SerializeField]
     private float _initialLuck;
 
     private void OnEnable()
@@ -25,8 +22,8 @@ public class Character : MonoBehaviour
         _characterLuck._value = _initialLuck;
     }
     
-    public void DecrementLuck()
+    public void DecrementLuck(float damageTaken)
     {
-        _characterLuck._value -= _damageTaken;
+        _characterLuck._value -= damageTaken;
     }
 }
