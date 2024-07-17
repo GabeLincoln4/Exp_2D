@@ -248,9 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5877194b83f56f14faa5e95921bf01c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterHP: {fileID: 11400000, guid: e2e352d6d87030144886006e998cd23e, type: 2}
-  _characterLuck: {fileID: 11400000, guid: 11e29a7330f9297488ee8e9036bf4756, type: 2}
-  _damageTaken: 6
+  _characterStats: {fileID: 11400000, guid: 2954e970faa44a54ea1d062f46a89cc6, type: 2}
   _initialLuck: 55
 --- !u!114 &104337426
 MonoBehaviour:
@@ -858,9 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9660993805e658c4489bdafeacaca553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterHP: {fileID: 11400000, guid: 52ea062d77859544b8aca86a378c1741, type: 2}
-  _characterLuck: {fileID: 11400000, guid: 10698d42273fd76498cf7ff2a8105a53, type: 2}
-  _damageTaken: 5
+  _characterStats: {fileID: 11400000, guid: 0dc933415b513ae4cbb9c323fad7ab93, type: 2}
   _initialLuck: 35
 --- !u!114 &926592071
 MonoBehaviour:
@@ -1159,7 +1155,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 926592070}
         m_TargetAssemblyTypeName: Character, Assembly-CSharp
-        m_MethodName: DecrementLuck
+        m_MethodName: DecrementMorale
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
