@@ -8,6 +8,7 @@ public class InputSystem : MonoBehaviour
     public GameEvent _onAttackInputEvent;
     public GameEvent _onAttackInputEventEnd;
     public GameEvent _onMagicAttackInputInvoked;
+    public GameEvent _onUnwelcomeContemplationAndSummonInvoked;
     [SerializeField]
     private BooleanVariableObject _magicAttackIsRaised;
 
@@ -34,6 +35,11 @@ public class InputSystem : MonoBehaviour
             {
                 _onMagicAttackInputInvoked.Raise();
             }
+        }
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            _onUnwelcomeContemplationAndSummonInvoked.Raise();
         }
 
     } 

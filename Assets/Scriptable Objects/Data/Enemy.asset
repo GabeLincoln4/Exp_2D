@@ -15,4 +15,5 @@ MonoBehaviour:
   _name: Enemy
   _initialHealth: 100
   _currentCharacterHealth: 0
+  _initialMental: 60
   _characterMental: 45
