@@ -1056,9 +1056,7 @@ GameObject:
   - component: {fileID: 1082359459}
   - component: {fileID: 1082359463}
   m_Layer: 0
-
   m_Name: Input Scheme B
-
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
